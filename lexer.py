@@ -11,6 +11,8 @@ def lexer(entrada_path: str, saida_path: str) -> None:
   except FileNotFoundError:
     sys.exit(1)
 
+  # Abre o arquivo especificado e compila linha por linha
+  # No fim, escreve no arquivo de saída o resultado da compilação
   saida = []
   for num_linha, linha in enumerate(linhas, 1):
     tokens, erro = utils.tokenize_line(linha, num_linha)
@@ -41,9 +43,9 @@ if __name__ == "__main__":
 
     for i, arquivo in enumerate(arquivos):
       try:
-        lexer(arquivo, f"saida-{arquivo}")
+        lexer(arquivo, f"saida-{arquivo.name}")
       except:
-        print(f"Erro em saída-{arquivo}")
+        print(f"Erro em saída-{arquivo.name}")
   else:
     entrada_path = sys.argv[1]
     saida_path = sys.argv[2]

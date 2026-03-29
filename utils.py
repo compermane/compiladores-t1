@@ -10,15 +10,19 @@ def tokenize_line(line: str, line_number: int) -> Tuple[List[str], str]:
   while i < len(line):
     ch = line[i]
 
+    # Check para espaços em branco
     if ch in ' \t':
       i += 1
       continue
 
+    # Check para } (fim de comentário). Nesse caso, retorna erro
     if ch == '}':
       return tokens, "Linha {}: }} - simbolo nao identificado".format(line_number)
 
+    # Check para { (começo de comentário)
     if ch == '{':
       i += 1
+      # Busca o fechamento, retornado erro caso não encontre
       while i < len(line) and line[i] != '}':
         i += 1
 
@@ -28,6 +32,7 @@ def tokenize_line(line: str, line_number: int) -> Tuple[List[str], str]:
       i += 1
       continue
 
+    # Tratamento de cadeias de literais
     if ch == '"':
       end = line.find('"', i + 1)
       if end == -1:
@@ -37,6 +42,7 @@ def tokenize_line(line: str, line_number: int) -> Tuple[List[str], str]:
       i = end + 1
       continue
 
+    # Regex para identificar (IDENT, NUM, SYMBOL)
     match = None
     for regex, token_type in constants.TOKEN_REGEX:
       pattern = re.compile(regex)
@@ -51,6 +57,7 @@ def tokenize_line(line: str, line_number: int) -> Tuple[List[str], str]:
         i = match.end()
         break
 
+    # Retorna erro se não estiver especificado (símbolo não reconhecido)
     if not match:
       return tokens, f"Linha {line_number}: {ch} - simbolo nao identificado"
 

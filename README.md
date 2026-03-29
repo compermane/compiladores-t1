@@ -2,6 +2,10 @@
 Nome: Eugênio Akinori Kisi Nishimiya
 RA: 811598
 
+## Pré-requisitos
+- Java 11 ou superior
+- Python 3.11.2 ou superior
+
 ## Como executar
 Faça o clone do repositório com
 ```bash
