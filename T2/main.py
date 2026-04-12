@@ -17,7 +17,6 @@ from LALexer import LALexer
 from LAParser import LAParser
 import sys
 
-
 class MeuErroListener(ErrorListener):
   """
   Esse listener sobrescreve o método `syntaxError` para tratar diferentes tipos de erro
@@ -68,7 +67,6 @@ class MeuErroListener(ErrorListener):
     # Interrompe a execução após o primeiro erro
     sys.exit(1)
 
-
 def main():
   # Verifica se os argumentos foram passados corretamente
   if len(sys.argv) < 3:
@@ -113,7 +111,5 @@ def main():
       f.write(f"Erro durante a análise sintática: {str(e)}\n")
     sys.exit(1)
 
-
-# Ponto de entrada do programa
 if __name__ == '__main__':
   main()
