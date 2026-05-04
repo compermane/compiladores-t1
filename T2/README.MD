@@ -36,7 +36,7 @@ O programa recebe um arquivo de entrada contendo um código fonte e verifica se 
 
 ### Clonar o repositório e entrar na pasta T2
 ```bash
-git clone https://github.com/gabrielcavalca/Compiladores.T2
+git clone https://github.com/compermane/compiladores-t1
 cd T2
 ```
 
