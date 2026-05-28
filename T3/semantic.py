@@ -7,9 +7,6 @@ from LAListener import LAListener
 # Tipos primitivos aceitos pela linguagem
 TIPOS_VALIDOS = {'literal', 'inteiro', 'real', 'logico'}
 
-if __name__ == "__main__":
-  main()
-
 class AnalisadorSemantico(LAListener):
   def __init__(self, token_stream):
     # Tabela de símbolos: nome -> tipo
@@ -231,7 +228,6 @@ class AnalisadorSemantico(LAListener):
     for exp in ctx.expressao():
       self.tipo_expressao(exp)
 
-
 def main():
   entrada = sys.argv[1]
   saida = sys.argv[2]
@@ -252,3 +248,5 @@ def main():
       f.write(erro + '\n')
     f.write("Fim da compilacao\n")
 
+if __name__ == "__main__":
+  main()
