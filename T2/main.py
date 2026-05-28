@@ -32,7 +32,7 @@ class MeuErroListener(ErrorListener):
     self.output_file = output_file
     self.lexer = lexer
 
-  def syntaxError(self, offendingSymbol, line):
+  def syntaxError(self, recognizer, offendingSymbol, line, column, msg, e):
     """
     offendingSymbol: Token que causou o erro.
     line (int): Número da linha onde ocorreu o erro.
