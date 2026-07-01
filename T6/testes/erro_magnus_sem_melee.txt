@@ -1,0 +1,4 @@
+partida
+aliados: magnus, sniper, lina, crystal_maiden, lion;
+rivais: pudge, axe, tidehunter;
+fim_partida

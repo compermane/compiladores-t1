@@ -1,0 +1,4 @@
+partida
+aliados: pa, tinker, storm_spirit, crystal_maiden, lion;
+rivais: pudge, axe, sniper;
+fim_partida

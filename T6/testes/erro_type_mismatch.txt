@@ -1,0 +1,6 @@
+partida
+aliados: pa, lion, earthshaker, crystal_maiden, magnus;
+rivais: pudge, axe, sniper;
+pa constroi battle_fury;
+lion constroi battle_fury;
+fim_partida

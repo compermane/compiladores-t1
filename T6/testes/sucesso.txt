@@ -1,0 +1,6 @@
+partida
+aliados: pa, earthshaker, magnus, crystal_maiden, lion;
+rivais: pudge, axe, sniper, witch_doctor, disruptor;
+analisar pa;
+pa constroi battle_fury;
+fim_partida

@@ -1,0 +1,8 @@
+partida
+aliados: axe, lina, earthshaker, witch_doctor, crystal_maiden;
+rivais: pa, pudge, magnus, vengeful_spirit, lion;
+analisar lina;
+analisar axe;
+lina constroi hurricane_pike;
+axe constroi blink_dagger;
+fim_partida

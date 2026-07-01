@@ -1,0 +1,4 @@
+partida
+aliados: pa, lion, batman;
+rivais: pudge, axe;
+fim_partida

@@ -1,0 +1,4 @@
+partida
+aliados: pa, sniper, juggernaut, phantom_lancer, crystal_maiden;
+rivais: pudge, axe, tidehunter;
+fim_partida

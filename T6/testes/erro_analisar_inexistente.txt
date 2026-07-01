@@ -1,0 +1,5 @@
+partida
+aliados: pa, lion, earthshaker;
+rivais: pudge, axe, sniper;
+analisar batman;
+fim_partida

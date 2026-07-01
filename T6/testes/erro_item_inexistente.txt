@@ -1,0 +1,5 @@
+partida
+aliados: pa, lion, earthshaker, crystal_maiden, magnus;
+rivais: pudge, axe, sniper;
+pa constroi infinity_edge;
+fim_partida

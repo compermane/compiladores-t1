@@ -1,0 +1,4 @@
+partida
+aliados: pa, lion, pa;
+rivais: pudge, axe;
+fim_partida

@@ -1,0 +1,4 @@
+partida
+aliados: pa, lion, earthshaker;
+rivais: pa, axe, pudge;
+fim_partida

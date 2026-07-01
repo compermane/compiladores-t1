@@ -1,0 +1,4 @@
+partida
+aliados: pa, lion, earthshaker, crystal_maiden, magnus;
+rivais: pudge, axe, sniper, witch_doctor, disruptor;
+fim_partida
